@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{%  block title %}
+Обомне
+{% endblock title%}
+
+{% block content %}
+Наши личные проэкты
+<div class="row row-gap-4">
+    <div class="col-4">{% include 'components/_article-card.html' %}</div>
+    <div class="col-4">{% include 'components/_article-card.html' %}</div>
+    <div class="col-4">{% include 'components/_article-card.html' %}</div>
+    <div class="col-4">{% include 'components/_article-card.html' %}</div>
+    <div class="col-4">{% include 'components/_article-card.html' %}</div>
+    <div class="col-4">{% include 'components/_article-card.html' %}</div>
+</div>
+{% endblock %}

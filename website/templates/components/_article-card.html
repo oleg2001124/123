@@ -1,0 +1,17 @@
+{% load static %}
+
+
+<div class="card">
+  {% if article.preview %}
+  {% else %}
+    <img src="{% static 'images/placeholder.jpg' %}" class="card-img-top"
+       alt="..." height="350">
+  {% endif %}
+
+  <div class="card-body">
+    <h5 class="card-title">{{ article.name }}</h5>
+    <p class="card-text">{{ article.short_description }}</p>
+         content.<p></p>
+    <a href="{% url 'article_detail' article.pk %}" class="btn btn-primary">Oб этом</a>
+  </div>
+</div>
